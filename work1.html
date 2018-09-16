@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐</title>
+		  <style type="text/css">
+        #nav {
+                line-height: 50px;
+                width: 500px;           
+            }
+        #online{
+            background: blue;
+            width: 200px;
+            height: 50px;
+            float: left;
+            font-size: 15px;
+            color:white;
+            font-weight: bolder;
+            text-align: center;
+        }
+        #local{
+            width: 200px;
+            height: 50px;
+            float: left;
+            font-size: 15px;
+            text-align: center;
+            background:black;
+            color:white;
+            font-weight: bolder;
+        }
+        </style>
+	</head>
+	<body>
+		<div id="nav">
+            <div id="online">在线音乐</a></div>
+            <div id="local">本地音乐</a></div>
+        </div>
+        <br /><br />
+        <div id="value">
+            <p> 肆无忌惮  <a href="#" id="one" onclick="aa()">播放 </a>
+            </p>
+            <p> 哑巴      <a href="#" id="two"  onclick="bb()">播放 </a>
+            </p>
+        </div>
+        <div >
+            <audio src="audio/swjd.mp3" controls="controls" id="music1" autoplay="true"></audio>
+        </div>
+        <div >
+             <audio src="audio/yb.mp3" id="music2" ></audio>
+        </div>
+   	 </br>
+	</body>
+	<script>
+		var m1=document.getElementById("one");
+		var music1=document.getElementById("music1");
+		var music2=document.getElementById("music2");
+        function aa(){
+      		if(music1.paused){
+                    music2.pause();
+                    music1.play();
+            }
+      		else{
+      			 music1.play();
+      		}
+      		}
+         var m2=document.getElementById("two");
+         function bb(){
+            music1.pause();
+            music2.play();
+         }
+
+	</script>
+</html>
