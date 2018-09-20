@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>页面换肤</title>
+		<style>
+			.bb{
+				transition: 20px;
+			}
+			.bb:hover{
+				cursor: pointer;
+				transform: translate(0,-10px);
+			}
+			#gainsbroro{
+				background: gainsboro;
+			}
+			#red{
+				background: red;
+			}
+			#mediumpurple{
+				background: mediumpurple;
+			}
+			#deepskyblue{
+				background: deepskyblue;
+			}
+			#darkprange{
+				background: darkorange;
+			}
+			#lightgreen{
+				background: lightgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset style="height: 200px; width: 400px;">
+			<legend style="color: red;font-size: 30px; font-weight: bold;">页面换肤</legend>
+			<div style="border:solid; border-color: black; height: 40px;width: 300px;">
+				<div id="id1" class="bb" style="background: gainsboro; height: 25px;width:25px;position: relative;left:5px;top:8px;" onclick="changeColor('gainsboro	')"></div>
+				<div id="id2" class="bb" style="background: mediumpurple; height: 25px;width:25px;position: relative;left:40px;top:-17px;" onclick="changeColor('mediumpurple')"></div>
+				<div id="id3" class="bb" style="background: red; height: 25px;width:25px;position: relative;left:75px;top:-42px;" onclick="changeColor('red')"></div>
+				<div id="id4" class="bb" style="background: deepskyblue; height: 25px;width:25px;position: relative;left:110px;top:-67px;" onclick="changeColor('deepskyblue')"></div>
+				<div id="id5" class="bb" style="background: darkorange; height: 25px;width:25px;position: relative;left:145px;top:-92px;" onclick="changeColor('darkorange')"></div>
+				<div id="id6" class="bb" style="background: lightgreen; height: 25px;width:25px;position: relative;left:180px;top:-117px;" onclick="changeColor('lightgreen')"></div>
+			</div>
+			<br />
+			<div id="aa" >
+				localStorage将数据保存在客户端本地的硬件设备中，即使浏览器被关闭了，
+				该数据仍然存在，下次打开浏览器访问网站时仍然可以继续使用
+			</div>
+		</fieldset>
+	</body>
+	<script>
+		var getLocalColor = window.localStorage.getItem("localColor");
+ 		if(getLocalColor){	
+ 			getId('aa').background=getLocalColor;
+         }
+ 		else{}
+		function getId(id){
+			return document.getElementById(id);
+		}
+		getId('id1').onclick=function(){
+			getId('aa').background = "gainsbroro";
+        window.localStorage.setItem('localColor','gainsbroro');
+		}
+		function changeColor(color){
+			getId('aa').style.background=color;
+			document.id=color;
+			var time = new Date().getTime();
+			window.localStorage.setItem(time, color);
+        window.localStorage.setItem('localColor', color);
+		}
+		
+	
+	</script>
+</html>
