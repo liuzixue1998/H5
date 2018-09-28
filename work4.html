@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html > 
+<head> 
+ <meta charset="UTF-8"> 
+ <title>上传头像</title> 
+ <style> 
+  #drg{ 
+   width: 300px; 
+   height: 300px; 
+   border:1px solid lightgray; 
+   font-size: 40px; 
+   text-align: center; 
+   background-repeat: no-repeat; 
+   background-size: 100%; 
+  } 
+  #drg div{ 
+   margin:50px auto; 
+   width: 140px; 
+  } 
+  #txt{
+  	text-align: center;
+  	font-weight: bolder;
+  }
+ </style> 
+</head> 
+<body> 
+	<span id="txt">上传头像</span>
+ 	<div id="drg"> </div> 
+ <script > 
+  var dropBox; 
+  window.onload=function(){ 
+   drg = document.getElementById("drg"); 
+   drg.ondragenter = iDrag; 
+   drg.ondragover = iDrag; 
+   drg.ondrop = drop; 
+  } 
+  function iDrag(e){ 
+   e.stopPropagation(); 
+   e.preventDefault(); 
+  } 
+  function drop(e){ 
+   iDrag(e);
+   var data = e.dataTransfer; 
+   var files = data.files; 
+   var reader = new FileReader(); 
+   reader.onload=function(e){ 
+    drg.style.backgroundImage = "url('"+e.target.result+"')"; 
+   } 
+   reader.readAsDataURL(files[0]); 
+  } 
+ </script> 
+</body> 
+</html>
