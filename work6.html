@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background:url(images/bg3.JPG);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #container {
+            width: 960px;
+            height: 450px;
+            margin: 60px auto;
+            position: relative;
+        }
+
+        .pic {
+            width: 120px;
+        }
+
+        #container div:hover {
+            box-shadow: 15px 15px 20px rgba(50, 50, 50, 0.4);
+            transform: rotate(0deg) scale(1.20);
+            z-index: 2;
+        }
+
+        #container div {
+            padding: 10px 10px 15px;
+            background: white;
+            border: 1px solid #dddddd;
+            box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.4);
+            position: absolute;
+            z-index: 1;
+        }
+
+       #div1{
+            right: 900px;
+            top: 0;
+            transform: rotate(-5deg);
+            text-align: center;
+        }
+
+        #div2 {
+            left: 100px;
+            top: 0;
+            transform: rotate(-20deg);
+          	text-align: center;
+        }
+
+        #div3 {
+            left: 300px;
+            transform: rotate(5deg);
+           	text-align: center;
+        }
+
+        #div4{
+           	top: 0;
+            left: 500px;
+            transform: rotate(-5deg);
+            text-align: center;
+        }
+
+        #div5{
+            right: 150px;
+            top: 0;
+            transform: rotate(5deg);
+            text-align: center;
+        }
+
+        #div6 {
+            left: 800px;
+            top: 0;
+            transform: rotate(10deg);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    	<a href="#" title="相识"></a>
+    	<div id="div1">
+    		<img class="pic pic1" src="images/11.jpg" >
+    		相识
+    	</div>
+    	<div id="div2">
+    		<img class="pic pic2" src="images/22.JPG"><br />
+    		凝视
+    	</div>
+        <div id="div3">
+        	 <img class="pic pic3" src="images/33.JPG"><br />甜睡
+        </div>
+     	<div id="div4">
+     		<img class="pic pic4" src="images/44.JPG"><br />逗乐	
+     	</div>
+        <div id="div5">
+        	<img class="pic pic5" src="images/55.JPG"><br />奔跑
+        </div>
+        <div id="div6">
+        	<img class="pic pic6" src="images/66.JPG"><br />漠视
+        </div>
+    </div>
+</body>
+</html>
