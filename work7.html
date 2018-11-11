@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>响应式网页</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style type="text/css">
+			.imgshow{
+				margin: 5px;
+				padding: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航-->
+		
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-1">
+			      <span class="sr-only">导航开关</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+						<a class="navbar-brand" href="#">
+							<span class="glyphicon glyphicon-ok-sign"></span> Brand
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-1">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+						</ul>
+					</div>
+			</nav>
+			</div>
+		
+
+		<!--轮播图 -->
+		<div id="generic" class="carousel slide" data-ride="carousel">
+			<!-- 轮播（Carousel）指示标 -->
+			<ol class="carousel-indicators">
+				<li data-target="#generic" data-slide-to="0" class="active"></li>
+				<li data-target="#generic" data-slide-to="1"></li>
+				<li data-target="#generic" data-slide-to="2"></li>
+			</ol>
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img alt="First slide" src="imagess/banner1.jpg">
+					<div class="carousel-caption">
+						<h3>轮播图1</h3>
+						<h1>Hello, world!</h1>
+						<p>
+							<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+						</p>
+					</div>
+				</div>
+				<div class="item">
+					<img alt="Second slide" src="imagess/banner2.jpg">
+					<div class="carousel-caption">
+						<h3>轮播图2</h3>
+						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img alt="Third slide" src="imagess/banner3.jpg">
+					<div class="carousel-caption">
+						<h3>轮播图3</h3>
+						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					</div>
+				</div>
+			</div>
+			<!-- 轮播（Carousel）导航 -->
+			<a class="left carousel-control" href="#generic" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#generic" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<!--内容-->
+		<div class="row">
+  			<div class="col-md-4">
+  				<h2>Content area1</h2>
+  				<h4 style="color: darkgray">The first</h4>
+  				<h5>Bootstrap has a few easy ways to quickly get started, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.
+  				</h5>
+  			</div>
+  			<div class="col-md-4">
+  				<h2>Content area</h2>
+  				<h4 style="color: darkgray">The second2</h4>
+  				<h5>Bootstrap has a few easy ways to quickly get started, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.
+  				</h5>
+  			</div>
+  			<div class="col-md-4">
+  				<h2>Content area</h2>
+  				<h4 style="color: darkgray">The third3</h4>
+  				<h5>Bootstrap has a few easy ways to quickly get started, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.
+  				</h5>
+  			</div>
+		</div>
+
+		<!--表格 -->
+		<h2>Report Table</h2>
+		<h4 style="color: darkgray">Form detail</h4>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>first</th>
+					<th>second</th>
+					<th>third</th>
+					<th>forth</th>
+					<th>fifth</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>薛之謙</td>
+					<td>認真的雪</td>
+					<td>演員</td>
+					<td>像風一樣</td>
+					<td>
+						<button type="button" class="btn btn-success">提交</button>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>薛之謙</td>
+					<td>動物世界</td>
+					<td>狐狸</td>
+					<td>駱駝</td>
+					<td>
+						<button type="button" class="btn btn-success">提交</button>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>薛之謙</td>
+					<td>我好像在哪見過你</td>
+					<td>肆無忌憚</td>
+					<td>啞巴</td>
+					<td>
+						<button type="button" class="btn btn-success">提交</button>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>薛之謙</td>
+					<td>摩天大樓</td>
+					<td>最好</td>
+					<td>那是你離開了北京的生活</td>
+					<td>
+						<button type="button" class="btn btn-success">提交</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!--内容吧 -->
+		<p></p>
+		<div class="row">
+  			<div class="col-md-6">
+  				<img src="imagess/pic.jpg"/>
+  			</div>
+  			<div class="col-md-6">
+  				<h2 class="media-heading">Cras sit amet nibh libero, in gravida nulla.</h2>
+				<p> Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+				<div class="media-body">
+						<p>Maecens sed diam eget risus</p>
+						<p>Maecens sed diam eget risus</p>
+						<p>Maecens sed diam eget risus</p>
+						<p>Maecens sed diam eget risus</p>
+						<p>Maecens sed diam eget risus</p>
+				</div>
+				<div class="media-right">
+				  <img class="media-object " src="imagess/1.jpg" >
+				</div>
+  			</div>
+		
+		</div>
+		
+
+		<!--圖片們吧 -->
+		<div class="row">
+  		<div class="col-md-7">
+		<div class="imgshow">
+			<h2>Images Show</h2> <h4 style="color: darkgray">Images</h4>
+			<img src="imagess/2.jpg" alt="..." class="img-rounded">
+			<img src="imagess/3.jpg" alt="..." class="img-rounded">
+			<img src="imagess/4.jpg" alt="..." class="img-rounded">
+		</div>
+		<p> Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+		</div>
+		
+		<!--登陆注册界面-->
+		<div class="col-md-5">
+		<h2>User Login</h2> <h4 style="color: darkgray">Login</h4>
+		<form class="form-horizontal" >
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		    <div class="col-sm-10">
+		      <input type="email" class="form-control col-sm-10" id="inputEmail3" placeholder="Email">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <div class="checkbox">
+		        <label>
+		          <input type="checkbox"> Remember me
+		        </label>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="submit" class="btn btn-default">Sign in</button>
+		    </div>
+		  </div>
+		</form>
+		</div>
+</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>
